@@ -1,0 +1,7 @@
+{
+    "name": "CUSP sound tagging",
+    "short_name": "freesound",
+    "thumbnail": "http://imageshack.us/a/img37/156/flickrpersonthumbnail.png",
+    "description": "Freesound pattern recognition",
+    "question": "Tag this sound"
+}
