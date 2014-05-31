@@ -1,7 +1,7 @@
 {
-    "name": "CUSP sound tagging",
-    "short_name": "freesound",
-    "thumbnail": "http://imageshack.us/a/img37/156/flickrpersonthumbnail.png",
-    "description": "Freesound pattern recognition",
-    "question": "Tag this sound"
+    "name": "SONYC: Urban Sound Annotation",
+    "short_name": "sonyc",
+    "thumbnail": "http://thedailyneuron.com/wp-content/uploads/2013/10/Sound-waves-twitter-backgrounds-sound-waves-twitter-themes.jpg",
+    "description": "Urban sound labeling",
+    "question": "Label this sound"
 }
