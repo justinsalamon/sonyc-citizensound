@@ -137,7 +137,7 @@ pybossa.taskLoaded(function(task, deferred) {
     var img = $("<img/>");
 
     //deferred.resolve(task);
-    img.attr("src", task.info.spectral_l);
+    img.attr("src", task.info.spec_url);
     img.attr("id", "spectral_" + task.id);
     img.css("display", "none");
     img.load(function() {
@@ -150,7 +150,7 @@ pybossa.taskLoaded(function(task, deferred) {
     slider.css("margin-top", "5px");
     slider.css("width", "900px");
     slider.css("height", "200px");
-    slider.css("background", "url(" + task.info.spectral_l +")");
+    slider.css("background", "url(" + task.info.spec_url +")");
     slider.css("display", "none");
     task.info.slider = slider;
     //task.answer = [];
@@ -226,7 +226,7 @@ pybossa.presentTask(function(task, deferred) {
 
         $("#slider-range-" + task.id).show();
 
-        task.mySound = new buzz.sound(task.info.freesound_url, {
+        task.mySound = new buzz.sound(task.info.clip_url, {
                 autoplay: true,
                 }
                 );
