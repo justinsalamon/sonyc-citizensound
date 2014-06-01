@@ -211,7 +211,7 @@ pybossa.presentTask(function(task, deferred) {
                 range: true,
                 min: 0,
                 max:900,
-                values: [ 0, 800 ],
+                values: [ 0, 900 ],
                 slide: function( event, ui ) {
                     $("#inputTag").show();
                     $("#addTag").show();
@@ -222,7 +222,12 @@ pybossa.presentTask(function(task, deferred) {
                 }
         });
 
-        $(".ui-slider-range").css("opacity", "0.7");
+        $(".ui-slider-range").css("opacity", "0.0");
+        $(".ui-slider-range").css("cursor", "col-resize");
+        $("#slider-range-" + task.id + " .ui-slider-handle").css("height", "100%");
+        $("#slider-range-" + task.id + " .ui-slider-handle").css("width", "1px");
+        $("#slider-range-" + task.id + " .ui-slider-handle").css("top", "0");
+        $("#slider-range-" + task.id + " .ui-slider-handle").css("margin-left", "0");
 
         $("#slider-range-" + task.id).show();
 
