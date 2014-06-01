@@ -222,13 +222,15 @@ pybossa.presentTask(function(task, deferred) {
                 }
         });
 
-        $(".ui-slider-range").css("opacity", "0.0");
+        $(".ui-slider-range").css("opacity", "0.5");
         $(".ui-slider-range").css("cursor", "col-resize");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("height", "100%");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("width", "1px");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("top", "0");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("margin-left", "0");
-        $("#slider-range-" + task.id + "> div").css("opacity", "0.5");
+        //$(".ui-slider-range ui-widget-header").css("opacity", "0.5");
+        $(".ui-slider-range").css("background", "rgba(255,255,255,0.7)");
+
 
         $("#slider-range-" + task.id).show();
 
