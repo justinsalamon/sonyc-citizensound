@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/justin/Documents/dev/crowdcrafting/app-freesound/env"
+VIRTUAL_ENV="/Users/Charlie/Documents/devel/sonyc-citizensound/env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
