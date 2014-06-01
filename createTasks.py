@@ -19,7 +19,8 @@
 import json
 from optparse import OptionParser
 import pbclient
-from sounddata import get_sounds
+# from sounddata import get_sounds
+from freesound import get_sounds
 import random
 import logging
 from requests import exceptions
@@ -165,6 +166,7 @@ def run(app_config, options):
         # For this, we get first the photo URLs from Flickr
         sounds = get_sounds(options.keyword)
         print "getting sounds!!!!!!!!!!!!!!!"
+        print sounds
         question = app_config['question']
         [create_sound_clip_task(app, s) for s in sounds]
 
