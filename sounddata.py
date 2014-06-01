@@ -18,18 +18,19 @@
 import requests
 from urllib import quote
 
-path = "http://serv.cusp.nyu.edu/files/sonyc/citizensound/audio/"
+serverurl = "http://serv.cusp.nyu.edu/files/sonyc/citizensound/"
 
 def get_sounds(group):
-    url = "https://api.mongolab.com/api/1/databases/sonyc/collections/audio-data/538a43f9e4b0d7a3741b7fe2?apiKey=eFdR9h45nm-AuciNuN6d4G1Pd7NM38NS"
+    # url = "https://api.mongolab.com/api/1/databases/sonyc/collections/audio-data/538a43f9e4b0d7a3741b7fe2?apiKey=eFdR9h45nm-AuciNuN6d4G1Pd7NM38NS"
+    jsonurl = serverurl + "json/" + "clips.json"
     #payload = {'group':group}
     #res = requests.get(url, params=payload)
-    res = requests.get(url)
-    print url
+    res = requests.get(jsonurl)
+    # print url
     data = res.json()
     for s in data['sounds']:
-        s['clip_url'] = path + s['filename'] + ".wav"
-        s['spec_url'] = path + s['filename'] + ".png"
+        s['clip_url'] = serverurl + "audio/" + s['filename'] + ".wav"
+        s['spec_url'] = serverurl + "spectrograms/" + s['filename'] + ".png"
         # print clip_url
         # print spec_url
     return data['sounds']
