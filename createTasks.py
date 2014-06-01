@@ -164,6 +164,7 @@ def run(app_config, options):
         # Then, we have to create a set of tasks for the application
         # For this, we get first the photo URLs from Flickr
         sounds = get_sounds(options.keyword)
+        print "getting sounds!!!!!!!!!!!!!!!"
         question = app_config['question']
         [create_sound_clip_task(app, s) for s in sounds]
 
