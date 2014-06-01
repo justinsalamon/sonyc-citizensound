@@ -19,7 +19,7 @@
 import json
 from optparse import OptionParser
 import pbclient
-from freesound import get_sounds
+from sounddata import get_sounds
 import random
 import logging
 from requests import exceptions
