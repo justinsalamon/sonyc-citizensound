@@ -38,7 +38,7 @@
 -->
 <div class="row skeleton"> <!-- Start Skeleton Row-->
     <div class="span12"><!-- Start of Question and Submission DIV (column) -->
-        <h1 id="question">Tag this sound clip</h1> <!-- The question will be loaded here -->
+        <h1 id="question">Label this sound clip</h1> <!-- The question will be loaded here -->
     </div>
 </div>
 <div class="row skeleton"> <!-- Start Skeleton Row-->
@@ -63,7 +63,7 @@
 
         <form class="form-inline">
 
-        <input type="text" name="inputTag" id="inputTag" style="display:none">
+        <input type="text" name="inputTag" id="inputTag">
         <button class="btn btn-inverse btn-answer disabled" value='addTag' id="addTag" type="button"><i class="icon icon-white icon-plus"></i> Add tag</button>
 
         </form> 
@@ -165,7 +165,7 @@ pybossa.taskLoaded(function(task, deferred) {
 pybossa.presentTask(function(task, deferred) {
     if ( !$.isEmptyObject(task) ) {
         loadUserProgress();
-        $("#addTag").hide();
+        //$("#addTag").hide();
 
         $("#spectrals").append(task.info.slider);
 
@@ -222,12 +222,15 @@ pybossa.presentTask(function(task, deferred) {
                 }
         });
 
-        $(".ui-slider-range").css("opacity", "0.0");
+        $(".ui-slider-range").css("opacity", "0.5");
         $(".ui-slider-range").css("cursor", "col-resize");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("height", "100%");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("width", "1px");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("top", "0");
         $("#slider-range-" + task.id + " .ui-slider-handle").css("margin-left", "0");
+        //$(".ui-slider-range ui-widget-header").css("opacity", "0.5");
+        $(".ui-slider-range").css("background", "rgba(255,255,255,0.7)");
+
 
         $("#slider-range-" + task.id).show();
 
@@ -267,6 +270,7 @@ pybossa.presentTask(function(task, deferred) {
                     $("#inputTag").addClass("disabled");
                     task.mySound.unbind("timeupdate");
                     task.mySound.stop();
+                    //task.mySound = null;
                     console.log(buzz.sounds);
                     buzz.sounds = [];
                     console.log(buzz.sounds);
