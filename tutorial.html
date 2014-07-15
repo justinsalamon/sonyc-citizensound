@@ -2,30 +2,105 @@
     <div class="span12">
         <div id="modal" class="modal hide fade">
             <div class="modal-header">
-                <h3>Flickr Person Finder tutorial</h3>
+                <h3>SONYC: Tutorial</h3>
             </div>
             <div id="0" class="modal-body" style="display:none">
-                <p><strong>Hi!</strong> This is a <strong>demo application</strong> that shows how you can do pattern recognition on pictures or images using the PyBossa framework in Crowdcrafting.org.
+                <p style="text-align:left">
+                Welcome to New York University's sound tagging application. Please read this tutorial 
+                carefully before proceeding.
                </p> 
             </div>
             <div id="1" class="modal-body" style="display:none">
-                <p>The application is really simple. It loads a photo from <a href="http://flickr.com">Flickr</a> and asks you this question: <strong>Do you see a human in this photo?</strong></p>
-                <img src="http://farm7.staticflickr.com/6109/6286728068_2f3c6912b8_q.jpg" class="img-polaroid"/>
-                <p>You will have 3 possible answers:
-                <ul>
-                    <li>Yes,</li>
-                    <li>No, and</li>
-                    <li>I don't know</li>
-                </ul>
+                <p style="text-align:left">
+                Upon completing this tutorial you will be presented with a <strong>form</strong>. You 
+                must fill out this form before proceeding.
+                </p>
+                <p style="text-align:left">
+                <strong>Filling out the form:</strong><br/>
+                At the top of the form page you will find a <strong>personl code</strong>. 
+                Please copy and paste this code into the first box of the form:
                 </p>
                 <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_personalcode.png" width="550" class="img-polaroid"/>
                 </p>
-                <p>All you have to do is to click in one of the three possible answers and you will be done. This demo application could be adapted for more complex pattern recognition problems.</p>
+                <p style="text-align:left">
+                After pasting your personal code, please complete the remainder of the form and click the "submit" button:
+                </p>
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_submit2.png" width="550" class="img-polaroid"/>
+                </p>
+                <p style="text-align:left">
+                Once you've submitted the form, a "Continue" button will appear to proceed to the application.
+                </p>
+            </div>
+            <div id="2" class="modal-body" style="display:none">
+                <p style="text-align:left">
+                <strong>Your goal:</strong><br/>
+                In this app, we ask you to tag (i.e. to label) the different sources of sound that you can hear in a sound clip.
+                Examples of sound sources are "car horn", "dog bark", "siren", etc. Your goal is to label all the sounds
+                you can hear in the provided sound clip.
+                </p>
+                <p style="text-align:left">
+                <strong>Listening to the sound clip:</strong><br/>
+                We will present you with a sound clip, visualized as a spectrogram. Beneath the spectrogram you will find
+                the <strong>Play</strong> and <strong>Rewind</strong> buttons that allow you to listen to the sound as many times as you like. There is 
+                also a <strong>Show Tutorial</strong> button that allows you to go back to this tutorial at any time:
+                </p>
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_playsound_spec.png" width="550" class="img-polaroid"/>
+                </p>
+            </div>
+            <div id="3" class="modal-body" style="display:none">
+                <p style="text-align:left">
+                <strong>Tagging sound sources: Step 1</strong><br/>
+                After listening to the sound clip, the next step is to tag all the sound sources you've heard. For example,
+                let's say you heard a car horn. The first step is to select a salience level, i.e. is the car horn in the
+                <strong>foreground</strong> or <strong>background</strong>? If you're not sure, you can select <strong>not sure</strong>:
+                </p>
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_salience.png" width="550" class="img-polaroid"/>
+                </p>
+            </div>
+            <div id="4" class="modal-body" style="display:none">
+                <p style="text-align:left">
+                <strong>Tagging sound sources: Steps 2-3</strong><br/>
+                After selecting the salience of the sound source, you need to indicate the source itself. You can do so
+                by <strong>clicking on one of the provided tags</strong> (in our example we'd click on car horn):
+                </p>
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_tag.png" width="550" class="img-polaroid"/>
+                </p>
+                <p style="text-align:left">
+                If the source you heard is not one of the provided tags, you can create a <strong>custom tag</strong> 
+                instead:
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_customtag.png" width="550" class="img-polaroid"/>
+                </p>
+            </div>
+            <div id="5" class="modal-body" style="display:none">
+                <p style="text-align:left">
+                <strong>Tagging sound sources: Step 4</strong><br/>
+                The tag you selected will now appear in the added tags list, unlder the salience level you selected:
+                </p>
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_taglist1.png" width="550" class="img-polaroid"/>
+                </p>
+                <p style="text-align:left">
+                If there is more than one sound source in the recording, you should <strong>add a tag for every source</strong>:
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_taglist2.png" width="550" class="img-polaroid"/>
+                </p>
+                <p style="text-align:left">
+                If you add a tag by mistake, you can delete it by clicking on it in the tag list:
+                <p>
+                <p>
+                <img src="http://serv.cusp.nyu.edu/files/sonyc/annotation_exp/tutorial/tutorial_taglist3.png" width="550" class="img-polaroid"/>
+                </p>
             </div>
             <div class="modal-footer">
-                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn">Previous</a>
+                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-success" style="display:none">Previous</a>
                 <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
-                <a id="startContrib" href="../sonyc/newtask" class="btn btn-primary" style="display:none"><i class="icon-thumbs-up"></i> Try the demo!</a>
+                <a id="startContrib" href="../sonycv1/newtask" class="btn btn-primary" style="display:none"><i class="icon-thumbs-up"></i> Start Contributing!</a>
             </div>
         </div>
     </div>
@@ -40,17 +115,20 @@
         if (action == 'prev') {
             step = step - 1;
         }
-        if (step == 0) {
+        if (step <= 0) {
             $("#prevBtn").hide();
+            $("#nextBtn").show();
         }
-        else {
+        else if (step == 5) {
             $("#prevBtn").show();
-        }
-
-        if (step == 1 ) {
             $("#nextBtn").hide();
             $("#startContrib").show();
         }
+        else {
+            $("#prevBtn").show();
+            $("#nextBtn").show();
+        }
+
         $("#" + step).show();
     }
 
